@@ -3,6 +3,18 @@
         background-size: 650px
 
 @media screen and ( max-width: 1200px )
+    .footer
+        padding-top: 28px
+        padding-bottom: 28px
+        text-align: center
+        &__content
+            &__row
+                justify-content: center
+        &__row
+            flex-direction: column
+            align-items: center
+        &__box
+            margin-bottom: 15px
     .main
         background-size: 500px
         &__container
@@ -17,6 +29,20 @@
             padding-top: 40px
 
 @media screen and ( max-width: 991px )
+    .offer
+        padding-bottom: 45px
+        &__title
+            margin-bottom: 25px
+        &__card
+            width: 300px
+            height: 358px
+            margin: 10px
+            font-size: 16px
+            &__img
+                margin-right: 10px
+            &__title
+                font-size: 16px
+
     .main   
         background: url(../img/main/bgM.png) no-repeat right 30px
         &__title
@@ -26,13 +52,34 @@
         &__text
             font-size: 16px
 
+    .section
+        &__title
+            font-size: 22px
+
 @media screen and ( max-width: 767px )
+    .footer
+        &__content
+            &__row
+                flex-direction: column
+        &__text
+            margin-bottom: 15px
+        &__link
+            &:first-child
+                margin-right: 0
+                margin-bottom: 5px
+        &__text, &__link
+            font-size: 12px
+        &__logo
+            margin-bottom: 6px
+        &__box
+            &__text
+                font-size: 10px
+
     .main
         background-image: none
         padding: 0
         padding-top: 28px
         text-align: center
-        margin-bottom: 60px
         &__img
             margin: auto
         &__container
@@ -41,8 +88,6 @@
             display: block
         &__button
             font-size: 16px
-            padding-top: 20px
-            padding-bottom: 20px
         &__title
             font-size: 28px
             padding: 0 10px
@@ -79,3 +124,12 @@
             &__text
                 font-size: 12px
                 font-weight: normal
+
+@media screen and ( max-width: 575px )
+    .offer
+        padding-bottom: 60px
+        &__title
+            margin-bottom: 35px
+        &__card
+            margin: 0
+            margin-bottom: 20px
