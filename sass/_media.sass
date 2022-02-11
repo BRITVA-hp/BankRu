@@ -54,7 +54,7 @@
         font-size: 14px
     .master-calc
         &__box
-            margin-bottom: 7px
+            margin-bottom: 20px
         &__button
             font-size: 16px
             width: 290px
@@ -183,6 +183,11 @@
             font-size: 22px
 
 @media screen and ( max-width: 767px )
+    .master-calc
+        &__result
+            flex-wrap: wrap
+            justify-content: center
+
     .master-main
         padding: 28px 0 34px
         text-align: center
@@ -271,16 +276,16 @@
 
     .master-calc
         padding: 0
-        &__text-group
-            margin-right: 0
-            margin-bottom: 10px
-            &:last-child
-                margin-bottom: 0
         &__result
             flex-direction: column
             width: 100%
             max-width: 300px
             align-items: flex-start
+        &__text-group
+            margin-right: 0
+            margin-bottom: 10px
+            &:last-child
+                margin-bottom: 0
         &__box
             margin-bottom: 0
             width: 100%
